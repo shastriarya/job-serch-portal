@@ -1,0 +1,41 @@
+{
+  "name": "ai-job-platform-backend",
+  "version": "1.0.0",
+  "description": "AI Job & Internship Platform Backend (Node + Express + MongoDB + FastAPI Integration)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "echo \"No build step required\"",
+    "lint": "eslint .",
+    "seed:demo": "node src/scripts/seedDemoData.js",
+    "seed:demo:refresh": "node src/scripts/seedDemoData.js --refresh"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "ai",
+    "job-platform",
+    "backend"
+  ],
+  "author": "Arya",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "nodemon": "^3.1.4"
+  }
+}
